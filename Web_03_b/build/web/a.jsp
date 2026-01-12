@@ -1,0 +1,27 @@
+<%-- 
+    Document   : a.jsp
+    Created on : Jan 8, 2026, 4:58:10 PM
+    Author     : Latitude
+--%>
+
+<%@page import="model.UserDTO"%>
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>JSP Page</title>
+    </head>
+    
+    <%  
+        UserDTO user = (UserDTO)request.getAttribute("user");
+    %>
+    
+    <body>
+        Welcome <%=user.getFullName()%> <br/>
+        Bang dieu khien<br/>
+        Tinh nang 1<br/>
+        Tinh nang 2<br/>
+        Tinh nang 3<br/>
+    </body>
+</html>
